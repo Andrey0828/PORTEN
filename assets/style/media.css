@@ -1,0 +1,28 @@
+@media (max-width: 575.99px) {
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav__content-bottom {
+        position: relative;
+    }
+
+    .nav__content-bottom-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        top: -500px;
+        right: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav__content-bottom:hover .nav__content-bottom-list {
+        top: 100%;
+        opacity: 1;
+        height: max-content;
+    }
+
+}

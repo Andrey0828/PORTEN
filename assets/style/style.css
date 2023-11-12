@@ -1,0 +1,647 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: max-content;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav__content-top {
+    padding: 14px 0;
+    background: #000;
+}
+
+.nav__content-top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__content-top-information {
+    display: flex;
+    gap: 15px;
+}
+
+.information {
+    color: var(--gray, #969696);
+    font-family: PT Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav__content-top-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__content-top-btns-link {
+    color: var(--gray, #969696);
+    text-align: right;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav__content-bottom {
+    background: #0F0F0F;
+}
+
+.nav__content-bottom-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFF;
+    font-family: Post No Bills Jaffna;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .5s;
+}
+
+.nav__content-bottom-text-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__content-bottom-list {
+    display: flex;
+    transition: .5s;
+    z-index: -10;
+}
+
+.nav__content-bottom-list-link {
+    color: var(--gray, #969696);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 31px 20px;
+    display: block;
+    transition: .5s;
+}
+
+.nav__content-bottom-list-link:hover {
+    color: #FFF;
+    background: #1F1F1F;
+}
+
+.nav__content-bottom-text-links-btns {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.preview {
+    background-image: url(../images/preview-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 810px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-logo {
+    border: 4px solid #FFF;
+    padding: 93px 68px 94px 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: max-content;
+}
+
+.preview-logo-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Post No Bills Jaffna;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.preview-logo hr {
+    background: #FFF;
+    width: 179px;
+    height: 2px;
+    margin-top: -15px;
+    margin-bottom: 7px;
+}
+
+.preview-logo-town {
+    color: #FFF;
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.preview-descr {
+    color: #FFF;
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    text-transform: uppercase;
+    max-width: 730px;
+}
+
+.season__and__new-collection {
+    display: flex;
+    background: #000;
+}
+
+.season {
+    padding: 93px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.season-title {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.season hr {
+    background: #FFF;
+    width: 120px;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.season-cards {
+    display: flex;
+    gap: 50px;
+}
+
+.card-picture {
+    padding: 55px 22px 56px 23px;
+    background: #191B1C;
+    max-width: max-content;
+}
+
+.card-title {
+    color: var(--white, #FFF);
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    color: var(--light-gray, #D0D0D0);
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.collection {
+    background-image: url(../images/new-collection.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 880px;
+}
+
+.collection-title {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.collection hr {
+    background: #FFF;
+    width: 120px;
+    height: 1px;
+    margin: 30px 0;
+}
+
+.collection-btn {
+    display: inline-flex;
+    padding: 12px 28px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--white, #FFF);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    transition: .5s;
+}
+
+.collection-2018 {
+    display: flex;
+    background: #000;
+}
+
+.collection-2018 img {
+    min-height: 600px;
+}
+
+.collection-2018-content {
+    padding: 100px 284px 100px 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+}
+
+.collection-2018-content-title {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.collection-2018-content hr {
+    background: #FFF;
+    width: 120px;
+    height: 1px;
+    margin: 40px 0;
+}
+
+.collection-2018-content-descr {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    width: 471px;
+    margin-bottom: 61px;
+}
+
+.collection-2018-content-btn {
+    display: inline-flex;
+    padding: 12px 28px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--white, #FFF);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.new {
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background: #000;
+}
+
+.new__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-title {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.new hr {
+    background: #FFF;
+    width: 120px;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 81px;
+}
+
+.new__watchs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.new-cards {
+    display: flex;
+    gap: 23px;
+}
+
+.our__brands {
+    background: #0F0F0F;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.our__brands-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our__brands-title {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.our__brands-content hr {
+    background: #FFF;
+    width: 120px;
+    height: 1px;
+    margin: 40px 0;
+}
+
+.brands {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer__content-top {
+    padding-top: 80px;
+    padding-bottom: 99px;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.footer__content-top-text {
+    display: flex;
+}
+
+.footer__content-top-about-market {
+    margin-right: 30px;
+}
+
+.footer__content-top-categories {
+    margin-right: 92px;
+}
+
+.footer__content-top-title {
+    color: var(--white, #FFF);
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer__content-top-descr {
+    color: var(--white, #FFF);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    max-width: 350px;
+}
+
+.footer__content-top-categories-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__content-top-categories-link {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    background: #0F0F0F;
+    color: var(--light-gray, #D0D0D0);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    transition: .5s;
+}
+
+.footer__content-top-categories-links-top-row {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__content-top-categories-links-bottom-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    margin-top: 37px;
+}
+
+.form input {
+    background: rgba(255, 255, 255, 0.40);
+    padding: 12.5px 0 12.5px 20px;
+    max-width: 210px;
+    border: none;
+    outline: none;
+    color: var(--white, #FFF);
+}
+
+.form input::placeholder {
+    color: rgb(215, 207, 207)
+}
+
+.form button {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    background: #0F0F0F;
+    color: var(--white, #FFF);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.7px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.footer__content-bottom {
+    padding: 17px 0;
+    background: #0F0F0F;
+}
+
+.footer__content-bottom-text-descr {
+    color: var(--light-gray, #D0D0D0);
+    font-family: PT Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.collection-btn:hover, .collection-2018-content-btn:hover {
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+}
+
+.form button:active {
+    transform: scale(0.9);
+}
+
+.nav__content-top-information a:nth-child(1)  {
+    transition: .3s;
+}
+
+.nav__content-top-information a:nth-child(1):hover {
+    transform: scale(1.2);
+}
+
+.footer__content-top-categories-link:hover {
+    color: #0F0F0F;
+    background-color: var(--light-gray, #D0D0D0);
+}
+
+.nav__menu-btn {
+    width: 25px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.nav__menu-btn-line{
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: relative;
+}
+
+.nav__menu-btn-line::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: -7px;
+    transition: .3s;
+}
+
+.nav__menu-btn-line::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 7px;
+    transition: .3s;
+}
+
+.nav__content-bottom:hover .nav__menu-btn-line{
+    background: transparent;
+}
+
+.nav__content-bottom:hover .nav__menu-btn-line::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav__content-bottom:hover .nav__menu-btn-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
